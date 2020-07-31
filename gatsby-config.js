@@ -16,7 +16,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `fonts`,
-        path: `${__dirname}/public/static/font/`,
+        path: `${__dirname}/src/font/`,
       },
     },
     `gatsby-plugin-sass`,
