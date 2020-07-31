@@ -1,4 +1,9 @@
 @font-face {
-    font-family: "Featherly";
-    src: url("../../public/static/font/featherly/featherly/featherly.woff") format("woff");
-  } 
+  font-family: 'Featherly';
+  src: url('../../public/static/font/featherly/featherly/featherly.eot'); /* IE9 Compat Modes */
+  src: url('../../public/static/font/featherly/featherly/featherly.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../public/static/font/featherly/featherly/featherly.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../public/static/font/featherly/featherly/featherly.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../../public/static/font/featherly/featherly/featherly.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../public/static/font/featherly/featherly/featherly.svg') format('svg'); /* Legacy iOS */
+}
