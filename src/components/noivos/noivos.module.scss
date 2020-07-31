@@ -13,7 +13,6 @@
 
 .tituloPrincipal {
     font-family: 'featherly', sans-serif;
-    // margin-bottom: 5vh;
     font-size: 10vh;
     @include breakpoint (baby-bear) {
         font-size: 4vh;
