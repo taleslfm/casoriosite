@@ -1,0 +1,227 @@
+@import '../../styles/queries.scss';
+
+.container {
+    padding-top: 15vh;
+}
+
+.tituloPrincipal {
+    font-family: 'featherly', sans-serif;
+    text-align: center;
+    padding: 5vh 0;
+    font-size: 10vh;
+    @include breakpoint (baby-bear) {
+        font-size: 4vh;
+    }
+}
+
+.textoPadrinhos {
+    margin: 0 20vw 0 20vw;
+}
+
+.containerPadrinhos {
+    width: 90%;
+    margin: 5vw;
+    display: grid;
+    grid-template-columns: 5vw 30vw 30vw 30vw 5vw;
+    grid-template-rows: 30vh 30vh 30vh;
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-content: center;
+}
+
+.fotoDhielleErika {
+    grid-column: 2;
+    height: 30vh;
+    width: 15vw;
+    background: url("../padrinhos/images/WhatsApp\ Image\ 2020-07-29\ at\ 16.47.32.jpeg");
+    background-size: 60vh;
+    background-position: 70% 25%;
+    border-radius: 50%;
+    justify-self: end;
+    > p {
+        opacity: 0;
+        text-align: center;
+        line-height: 10;
+        color: white;
+        font-size: 3vh;
+    }
+    &:hover {
+        opacity: .5;
+        > p {
+            opacity: 1;
+        }
+    }
+}
+
+.fotoCaitoFernanda {
+    grid-column: 3;
+    height: 30vh;
+    width: 15vw;
+    background: url("../../images/IMG_4985.png");
+    background-size: 70vh;
+    background-position: 25% 20%;
+    border-radius: 50%;
+    justify-self: center;
+    > p {
+        opacity: 0;
+        text-align: center;
+        line-height: 10;
+        color: white;
+        font-size: 3vh;
+    }
+    &:hover {
+        opacity: .5;
+        > p {
+            opacity: 1;
+        }
+    }
+}
+
+.fotoBryanGiovana {
+    grid-column: 4;
+    height: 30vh;
+    width: 15vw;
+    background: url("../../images/WhatsApp\ Image\ 2020-07-30\ at\ 11.44.08.jpeg");
+    background-size: 35vh;
+    background-position: 20% 1%;
+    border-radius: 50%;
+    justify-self: start;
+    > p {
+        opacity: 0;
+        text-align: center;
+        line-height: 10;
+        color: white;
+        font-size: 3vh;
+    }
+    &:hover {
+        opacity: .5;
+        > p {
+            opacity: 1;
+        }
+    }
+}
+
+.fotoAirtonMarlete {
+    grid-column: 2;
+    grid-row: 2;
+    height: 30vh;
+    width: 15vw;
+    background: url("../../images//WhatsApp\ Image\ 2020-07-30\ at\ 11.37.26.jpeg");
+    background-size: 40vh;
+    background-position: 85% 10%;
+    border-radius: 50%;
+    justify-self: end;
+    > p {
+        opacity: 0;
+        text-align: center;
+        line-height: 10;
+        color: white;
+        font-size: 3vh;
+    }
+    &:hover {
+        opacity: .5;
+        > p {
+            opacity: 1;
+        }
+    }
+}
+
+.fotoLucasRaissa {
+    grid-column: 3;
+    grid-row: 2;
+    height: 30vh;
+    width: 15vw;
+    background: url("../../images/WhatsApp\ Image\ 2020-07-30\ at\ 11.41.02.jpeg");
+    background-size: 45vh;
+    background-position: 50% 10%;
+    border-radius: 50%;
+    justify-self: center;
+    > p {
+        opacity: 0;
+        text-align: center;
+        line-height: 10;
+        color: white;
+        font-size: 3vh;
+    }
+    &:hover {
+        opacity: .5;
+        > p {
+            opacity: 1;
+        }
+    }
+}
+
+.fotoZeMarcia {
+    grid-column: 4;
+    grid-row: 2;
+    height: 30vh;
+    width: 15vw;
+    background: url("../../images/WhatsApp\ Image\ 2020-07-29\ at\ 17.48.02.jpeg");
+    background-size: 60vh;
+    background-position: 50% 90%;
+    border-radius: 50%;
+    justify-self: start;
+    > p {
+        opacity: 0;
+        text-align: center;
+        line-height: 10;
+        color: white;
+        font-size: 3vh;
+    }
+    &:hover {
+        opacity: .5;
+        > p {
+            opacity: 1;
+        }
+    }
+}
+
+.fotoPedro {
+    grid-column: 3;
+    grid-row: 3;
+    height: 30vh;
+    width: 15vw;
+    background: url("../../images/WhatsApp\ Image\ 2020-07-30\ at\ 19.01.06.jpeg");
+    background-size: 30vh;
+    background-position: 1% 10%;
+    border-radius: 50%;
+    justify-self: left;
+    > p {
+        opacity: 0;
+        text-align: center;
+        line-height: 10;
+        color: white;
+        font-size: 3vh;
+    }
+    &:hover {
+        opacity: .5;
+        > p {
+            opacity: 1;
+        }
+    }
+}
+
+.fotoSonia {
+    grid-column: 3;
+    grid-row: 3;
+    height: 30vh;
+    width: 15vw;
+    background: url("../../images/WhatsApp\ Image\ 2020-07-30\ at\ 18.59.41.jpeg");
+    background-size: 60vh;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    justify-self: right;
+    > p {
+        opacity: 0;
+        text-align: center;
+        line-height: 10;
+        color: white;
+        font-size: 3vh;
+    }
+    &:hover {
+        opacity: .5;
+        > p {
+            opacity: 1;
+        }
+    }
+}

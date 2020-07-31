@@ -1,0 +1,16 @@
+@import '../../styles/queries.scss';
+
+.all {
+    text-align: center;
+    margin: 5vh 0;
+    width: 100%;
+}
+
+.tituloPrincipal {
+    font-family: 'featherly', sans-serif;
+    padding: 5vh 0;
+    font-size: 10vh;
+    @include breakpoint (baby-bear) {
+        font-size: 4vh;
+    }
+}

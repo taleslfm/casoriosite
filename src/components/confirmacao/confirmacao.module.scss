@@ -1,0 +1,76 @@
+@import '../../styles/queries.scss';
+
+.allContato {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    @include breakpoint (baby-bear) {
+        margin: 3vh;
+    }
+}
+
+.tituloPrincipal {
+    font-family: 'featherly', sans-serif;
+    font-size: 10vh;
+    margin-bottom: 5vh;
+    @include breakpoint (baby-bear) {
+        font-size: 4vh;
+    }
+}
+
+.formAll {
+    padding-left: 30vw;
+}
+
+.formSection {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5vh;
+    input, textarea {
+        width: 100%;
+        border: 1px black solid;
+        &:focus {
+            border: 2px solid maroon;
+        }
+    }
+    label {
+        font-size: 3vh;
+        padding-right: 1vw;
+    }
+    @include breakpoint (baby-bear) {
+        flex-flow: column;
+        padding: 2vh 2vh;
+        input, textarea {
+            width: 100%;
+        }
+    }
+}
+
+.dropDown {
+    width: 5vw;
+    margin-top: .5vh;
+}
+
+.buttonForm {
+    display: flex;
+    justify-content: center;
+}
+
+.contatoBotao {
+    border: 1px solid black;
+    background: white;
+    color: black;
+    margin: 1vh 4vh;
+    padding: 2vh 8vh;
+    font-size: 1.5em;
+    &:focus, &:hover {
+        background-color: maroon;
+        color: white;
+        border: maroon;
+        cursor: pointer;
+    }
+    @include breakpoint (baby-bear) {
+        margin: 2vh;
+        padding: 2vh 6vh;
+    }
+}

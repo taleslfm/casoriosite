@@ -1,0 +1,46 @@
+@import '../../styles/queries.scss';
+@import url(//db.onlinewebfonts.com/c/3a3a19f140d07620fa88224d741c6bcf?family=featherly);
+
+.headerLogo {
+    height: 85vh;
+    width: 99vw;
+    background: url("../../images/IMG_6449.png");
+    background-size: 100vw auto;
+    background-position: center;
+    vertical-align: middle;
+    border-radius: 0 0 10px 10px;
+}
+
+.title {
+    font-family: 'featherly', sans-serif;
+    font-size: 10vh;
+    padding-top: 2.5vh;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.menuTopo {
+    background-color: white;
+    margin-top: 2vh;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.linkTopo {
+    color: black;
+    text-decoration: none;
+    padding-left: 2vw;
+    padding-right: 2vh;
+    padding-top: 2.5vh;
+    font-size: 3vh;
+    &:hover {
+        color: #581d22;
+    }
+    @include breakpoint (baby-bear) {
+        font-size: 3vh;
+    }
+}

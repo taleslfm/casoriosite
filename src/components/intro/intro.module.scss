@@ -1,0 +1,34 @@
+@import '../../styles/queries.scss';
+@import url(//db.onlinewebfonts.com/c/3a3a19f140d07620fa88224d741c6bcf?family=featherly);
+
+.introAll {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 5vh 0;
+    @include breakpoint (baby-bear) {
+        margin: 3vh;
+    }
+}
+.tituloPrincipal {
+    font-family: 'featherly', sans-serif;
+    margin-bottom: 5vh;
+    font-size: 10vh;
+    @include breakpoint (baby-bear) {
+        font-size: 4vh;
+    }
+}
+
+.introText {
+    margin: 7vh 20vw;
+    p{
+        // font-size: 3vh;
+        text-align: left;
+    }
+}
+
+.barberPole {
+    color: #FFD700;
+    text-shadow: 1px 1px black;
+    
+}

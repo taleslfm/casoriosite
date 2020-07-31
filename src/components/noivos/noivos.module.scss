@@ -1,0 +1,47 @@
+@import '../../styles/queries.scss';
+
+
+.allNoivos {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 30vh 0 10vh 0;
+    @include breakpoint (baby-bear) {
+        margin: 3vh;
+    }
+}
+
+.tituloPrincipal {
+    font-family: 'featherly', sans-serif;
+    // margin-bottom: 5vh;
+    font-size: 10vh;
+    @include breakpoint (baby-bear) {
+        font-size: 4vh;
+    }
+}
+
+.containerNoivos {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.noiva {
+    background: url('../../images/37f15b45-1a4f-4d80-85cc-ea362f852712.png');
+    border-radius: 50%;
+    height: 50vh;
+    width: 25vw;
+    background-size: 100vh;
+    background-position: 10% 10%;
+}
+
+.noivo {
+    background: url('../../images/37f15b45-1a4f-4d80-85cc-ea362f852712.png');
+    border-radius: 50%;
+    margin-left: 5vw;
+    height: 50vh;
+    width: 25vw;
+    background-size: 100vh;
+    background-position: 80% 1%;
+}
