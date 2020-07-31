@@ -10,7 +10,7 @@ export default () => (
         </div>
         <div className={confirmacaoStyle.formAll}>
             <div className={confirmacaoStyle.formSection}>
-                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <form name="confirmação" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="contact" value="contact"/>
                     <div className={confirmacaoStyle.formSection} >
                         <label htmlFor="name">Nome:</label>
