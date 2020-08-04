@@ -1,15 +1,18 @@
 @import '../../styles/queries.scss';
 
 .headerLogo {
-    height: 85vh;
+    height: 120vh;
     width: 99vw;
-    background: url("../../images/IMG_6449.png");
-    background-size: 100vw auto;
-    background-position: center;
-    vertical-align: middle;
+    background: url("../../images/IMG_6455.png");
+    background-size: 100vw 150vh;
+    background-repeat: no-repeat;
     border-radius: 0 0 10px 10px;
+    background-position: 0 -30vh;
     @include breakpoint (baby-bear) {
-        background-size: cover;
+        height: none;
+        background-size: 100vw 45vh;
+        background-position: 0vw 10vh;
+        height: 60vh;
     }
 }
 

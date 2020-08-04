@@ -7,7 +7,7 @@ import noivosStyle from "./noivos.module.scss"
 export default () => {
   const data = useStaticQuery(graphql`
 query NoivosQuery {
-  noivo: file(relativePath: {eq: "noivo.png"}) {
+  noivo: file(relativePath: {eq: "noivos2.png"}) {
     childImageSharp {
       fixed {
         base64
@@ -23,7 +23,7 @@ query NoivosQuery {
       }
     }
   }
-  noiva: file(relativePath: {eq: "noiva.png"}) {
+  noiva: file(relativePath: {eq: "noivos2.png"}) {
     childImageSharp {
       fixed {
         base64

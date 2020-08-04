@@ -24,7 +24,7 @@
     margin: 5vw;
     display: grid;
     grid-template-columns: 5vw 30vw 30vw 30vw 5vw;
-    grid-template-rows: 30vh 30vh 30vh;
+    grid-template-rows: 40vh 40vh 40vh;
     column-gap: 10px;
     row-gap: 15px;
     justify-content: center;
@@ -41,8 +41,18 @@
     width: 30vh;
     border-radius: 50%;
     overflow: hidden;
-    img {
+    > p {
         position: relative;
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        opacity: 0;
+        -webkit-text-stroke: 1px #fff;
+    }
+    &:hover {
+        p {
+            opacity: 1;
+        }
     }
     @include breakpoint (baby-bear) {
         margin-bottom: 3vh;
@@ -53,9 +63,18 @@
     @extend .singlePadrinhos;
     grid-column: 2;
     justify-self: end;
+    > p {
+        top: -180px;
+    }
 }
 
+.blurFoto {
+    &:hover, &:focus {
+        opacity: .5;
+    }
+}
 .fotoDhielleErika {
+    @extend .blurFoto;
     left: -130px;
 }
 
@@ -63,9 +82,13 @@
     @extend .singlePadrinhos;
     grid-column: 3;
     justify-self: center;
+    > p {
+        top: -220px;
+    }
 }
 
 .fotoCaitoFernanda {
+    @extend .blurFoto;
     transform: scale(1.2);
     left: -20px;
 }
@@ -73,9 +96,13 @@
 .containerBryanGiovana {
     @extend .singlePadrinhos;
     grid-column: 4;
+    > p {
+        top: -325px;
+    }
 }
 
 .fotoBryanGiovana {
+    @extend .blurFoto;
     transform: scale(.7);
     left: -75px;
     top: -60px;
@@ -86,9 +113,13 @@
     grid-column: 2;
     grid-row: 2;
     justify-self: right;
+    > p {
+        top: -525px;
+    }
 }
 
 .fotoAirtonMarlete {
+    @extend .blurFoto;
     left: -110px;
     top: -90px;
     transform: scale(.7);
@@ -99,9 +130,13 @@
     grid-column: 3;
     grid-row: 2;
     justify-self: center;
+    > p {
+        top: -340px;
+    }
 }
 
 .fotoLucasRaissa {
+    @extend .blurFoto;
     left: -80px;
     top: -20px;
 }
@@ -110,9 +145,13 @@
     @extend .singlePadrinhos;
     grid-column: 4;
     grid-row: 2;
+    > p {
+        top: -135px;
+    }
 }
 
 .fotoZeMarcia {
+    @extend .blurFoto;
     left: -75px;
 }
 
@@ -121,8 +160,12 @@
     grid-column: 3;
     grid-row: 3;
     justify-self: start;
+    > p {
+        top: -400px;
+    }
 }
 .fotoPedro {
+    @extend .blurFoto;
     transform: scale(.6);
     left: -100px;
     top: -100px;
@@ -133,8 +176,12 @@
     grid-column: 3;
     grid-row: 3;
     justify-self: end;
+    > p {
+        top: -320px;
+    }
 }
 .fotoSonia {
+    @extend .blurFoto;
     top: -120px;
     left: -90px;
 }

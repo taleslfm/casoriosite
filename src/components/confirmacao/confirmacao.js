@@ -5,8 +5,10 @@ import confirmacaoStyle from "./confirmacao.module.scss"
 export default () => (
 
     <section id="confirmacao" className= {confirmacaoStyle.allContato}>
-        <div>
+        <div className={confirmacaoStyle.sub}>
             <h1 className={confirmacaoStyle.tituloPrincipal}>Confirmação</h1>
+            <span>Confirme sua presença aqui. Coloque também o nome de todos os convidados! </span> <br/>
+            <span>Ex: João e Maria ou João, Maria e Pedro.</span>
         </div>
         <div className={confirmacaoStyle.formAll}>
             <div className={confirmacaoStyle.formSection}>
@@ -20,19 +22,38 @@ export default () => (
                         <label htmlFor="email"></label>
                         <input type="email" name="E-mail" placeholder="Email:" id="email"/>
                     </div>
+                    <div className={confirmacaoStyle.containerRadio}>
+                        <span>Você irá ao evento?</span>
+                        <div>
+                            <div>
+                                <input type="radio" id="f-option" name="selector"/>
+                                <label for="f-option">Sim</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="f-option" name="selector"/>
+                                <label for="f-option">Não</label>
+                            </div>
+                        </div>
+                    </div>
                     <div className={confirmacaoStyle.formSection}>
-                        <label for="quantidade convidados">Quantas pessoas virão?</label>
-                        <select name="convidados" id="convidados" className={confirmacaoStyle.dropDown}>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                        </select>
+                        <div className={confirmacaoStyle.quantos}>
+                            <label for="quantidade convidados">Quantos adultos?</label>
+                            <select name="convidados" id="convidados" className={confirmacaoStyle.dropDown}>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                            </select> 
+                        </div>
+                    </div>
+                    <div className={confirmacaoStyle.containerTel}>
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
                     </div>
                     <div className={confirmacaoStyle.formSection}>
                         <label htmlFor="message">Se quiser deixe uma mensagem!</label>
