@@ -2,6 +2,7 @@
 
 .container {
     padding-top: 15vh;
+    margin-bottom: 20vh;
 }
 
 .tituloPrincipal {
@@ -9,13 +10,13 @@
     text-align: center;
     padding: 5vh 0;
     font-size: 10vh;
-    @include breakpoint (baby-bear) {
-        font-size: 4vh;
-    }
 }
 
 .textoPadrinhos {
     margin: 0 20vw 0 20vw;
+    @include breakpoint (baby-bear) {
+        margin: 3vh 5vh;
+    }
 }
 
 .containerPadrinhos {
@@ -27,201 +28,113 @@
     column-gap: 10px;
     row-gap: 15px;
     justify-content: center;
+    @include breakpoint (baby-bear) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        margin-left: 20vw;
+    }
+}
+
+.singlePadrinhos {
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+        position: relative;
+    }
+    @include breakpoint (baby-bear) {
+        margin-bottom: 3vh;
+    }
+}
+
+.containerDhielleErika {
+    @extend .singlePadrinhos;
+    grid-column: 2;
+    justify-self: end;
 }
 
 .fotoDhielleErika {
-    grid-column: 2;
-    height: 30vh;
-    width: 15vw;
-    background: url("../padrinhos/images/WhatsApp\ Image\ 2020-07-29\ at\ 16.47.32.jpeg");
-    background-size: 60vh;
-    background-position: 70% 25%;
-    border-radius: 50%;
-    justify-self: end;
-    > p {
-        opacity: 0;
-        text-align: center;
-        line-height: 10;
-        color: white;
-        font-size: 3vh;
-    }
-    &:hover {
-        opacity: .5;
-        > p {
-            opacity: 1;
-        }
-    }
+    left: -130px;
+}
+
+.containerCaitoFernanda {
+    @extend .singlePadrinhos;
+    grid-column: 3;
+    justify-self: center;
 }
 
 .fotoCaitoFernanda {
-    grid-column: 3;
-    height: 30vh;
-    width: 15vw;
-    background: url("../../images/IMG_4985.png");
-    background-size: 70vh;
-    background-position: 25% 20%;
-    border-radius: 50%;
-    justify-self: center;
-    > p {
-        opacity: 0;
-        text-align: center;
-        line-height: 10;
-        color: white;
-        font-size: 3vh;
-    }
-    &:hover {
-        opacity: .5;
-        > p {
-            opacity: 1;
-        }
-    }
+    transform: scale(1.2);
+    left: -20px;
+}
+
+.containerBryanGiovana {
+    @extend .singlePadrinhos;
+    grid-column: 4;
 }
 
 .fotoBryanGiovana {
-    grid-column: 4;
-    height: 30vh;
-    width: 15vw;
-    background: url("../../images/WhatsApp\ Image\ 2020-07-30\ at\ 11.44.08.jpeg");
-    background-size: 35vh;
-    background-position: 20% 1%;
-    border-radius: 50%;
-    justify-self: start;
-    > p {
-        opacity: 0;
-        text-align: center;
-        line-height: 10;
-        color: white;
-        font-size: 3vh;
-    }
-    &:hover {
-        opacity: .5;
-        > p {
-            opacity: 1;
-        }
-    }
+    transform: scale(.7);
+    left: -75px;
+    top: -60px;
+}
+
+.containerAirtonMarlete {
+    @extend .singlePadrinhos;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: right;
 }
 
 .fotoAirtonMarlete {
-    grid-column: 2;
+    left: -110px;
+    top: -90px;
+    transform: scale(.7);
+}
+
+.containerLucasRaissa {
+    @extend .singlePadrinhos;
+    grid-column: 3;
     grid-row: 2;
-    height: 30vh;
-    width: 15vw;
-    background: url("../../images//WhatsApp\ Image\ 2020-07-30\ at\ 11.37.26.jpeg");
-    background-size: 40vh;
-    background-position: 85% 10%;
-    border-radius: 50%;
-    justify-self: end;
-    > p {
-        opacity: 0;
-        text-align: center;
-        line-height: 10;
-        color: white;
-        font-size: 3vh;
-    }
-    &:hover {
-        opacity: .5;
-        > p {
-            opacity: 1;
-        }
-    }
+    justify-self: center;
 }
 
 .fotoLucasRaissa {
-    grid-column: 3;
+    left: -80px;
+    top: -20px;
+}
+
+.containerZeMarcia {
+    @extend .singlePadrinhos;
+    grid-column: 4;
     grid-row: 2;
-    height: 30vh;
-    width: 15vw;
-    background: url("../../images/WhatsApp\ Image\ 2020-07-30\ at\ 11.41.02.jpeg");
-    background-size: 45vh;
-    background-position: 50% 10%;
-    border-radius: 50%;
-    justify-self: center;
-    > p {
-        opacity: 0;
-        text-align: center;
-        line-height: 10;
-        color: white;
-        font-size: 3vh;
-    }
-    &:hover {
-        opacity: .5;
-        > p {
-            opacity: 1;
-        }
-    }
 }
 
 .fotoZeMarcia {
-    grid-column: 4;
-    grid-row: 2;
-    height: 30vh;
-    width: 15vw;
-    background: url("../../images/WhatsApp\ Image\ 2020-07-29\ at\ 17.48.02.jpeg");
-    background-size: 60vh;
-    background-position: 50% 90%;
-    border-radius: 50%;
+    left: -75px;
+}
+
+.containerPedro {
+    @extend .singlePadrinhos;
+    grid-column: 3;
+    grid-row: 3;
     justify-self: start;
-    > p {
-        opacity: 0;
-        text-align: center;
-        line-height: 10;
-        color: white;
-        font-size: 3vh;
-    }
-    &:hover {
-        opacity: .5;
-        > p {
-            opacity: 1;
-        }
-    }
 }
-
 .fotoPedro {
-    grid-column: 3;
-    grid-row: 3;
-    height: 30vh;
-    width: 15vw;
-    background: url("../../images/WhatsApp\ Image\ 2020-07-30\ at\ 19.01.06.jpeg");
-    background-size: 30vh;
-    background-position: 1% 10%;
-    border-radius: 50%;
-    justify-self: left;
-    > p {
-        opacity: 0;
-        text-align: center;
-        line-height: 10;
-        color: white;
-        font-size: 3vh;
-    }
-    &:hover {
-        opacity: .5;
-        > p {
-            opacity: 1;
-        }
-    }
+    transform: scale(.6);
+    left: -100px;
+    top: -100px;
 }
 
-.fotoSonia {
+.containerSonia {
+    @extend .singlePadrinhos;
     grid-column: 3;
     grid-row: 3;
-    height: 30vh;
-    width: 15vw;
-    background: url("../../images/WhatsApp\ Image\ 2020-07-30\ at\ 18.59.41.jpeg");
-    background-size: 60vh;
-    background-position: 50% 50%;
-    border-radius: 50%;
-    justify-self: right;
-    > p {
-        opacity: 0;
-        text-align: center;
-        line-height: 10;
-        color: white;
-        font-size: 3vh;
-    }
-    &:hover {
-        opacity: .5;
-        > p {
-            opacity: 1;
-        }
-    }
+    justify-self: end;
+}
+.fotoSonia {
+    top: -120px;
+    left: -90px;
 }

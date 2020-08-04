@@ -4,9 +4,11 @@
     display: flex;
     flex-flow: column;
     text-align: center;
-    margin: 5vh 0;
+    min-height: 100vh;
+    // margin-top: 5vh;
+    // margin-bottom: 50vh;
     @include breakpoint (baby-bear) {
-        margin: 3vh;
+        width: 95%;
     }
 }
 .tituloPrincipal {
@@ -21,13 +23,13 @@
 .introText {
     margin: 7vh 20vw;
     p{
-        // font-size: 3vh;
         text-align: left;
+    }
+    @include breakpoint (baby-bear) {
+        margin: 3vh 5vh;
     }
 }
 
-.barberPole {
-    color: #FFD700;
-    text-shadow: 1px 1px black;
-    
+.contador {
+    margin-top: 10vh;
 }

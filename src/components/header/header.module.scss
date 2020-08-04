@@ -8,6 +8,9 @@
     background-position: center;
     vertical-align: middle;
     border-radius: 0 0 10px 10px;
+    @include breakpoint (baby-bear) {
+        background-size: cover;
+    }
 }
 
 .title {
@@ -17,16 +20,28 @@
     font-weight: bold;
     color: black;
     text-align: center;
+    @include breakpoint (baby-bear) {
+        font-size: 5vh;
+    }
 }
 
 .menuTopo {
     background-color: white;
-    margin-top: 2vh;
     height: 15vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100vw;
+    position: fixed;
+    z-index: 100;
+    @include breakpoint (baby-bear) {
+        flex-wrap: wrap;
+        min-height: 20vh;
+        > nav {
+            width: 90%;
+            margin-bottom: 2vh;
+        }
+    }
 }
 
 .linkTopo {
@@ -40,6 +55,6 @@
         color: #581d22;
     }
     @include breakpoint (baby-bear) {
-        font-size: 3vh;
+        font-size: 1.8vh;
     }
 }

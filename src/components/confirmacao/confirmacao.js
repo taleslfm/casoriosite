@@ -13,16 +13,16 @@ export default () => (
                 <form name="confirmação" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="contact" value="contact"/>
                     <div className={confirmacaoStyle.formSection} >
-                        <label htmlFor="name">Nome:</label>
-                        <input type="text" placeholder="Nome completo" name="Nome" id="name"/>
+                        <label htmlFor="name"></label>
+                        <input type="text" placeholder="Nome do Convidado:" name="Nome" id="name"/>
                     </div>
                     <div className={confirmacaoStyle.formSection}>
-                        <label htmlFor="email">Email:</label>
-                        <input type="email" name="E-mail" placeholder="exemplo@provedor.com" id="email"/>
+                        <label htmlFor="email"></label>
+                        <input type="email" name="E-mail" placeholder="Email:" id="email"/>
                     </div>
                     <div className={confirmacaoStyle.formSection}>
                         <label for="quantidade convidados">Quantas pessoas virão?</label>
-                        <select name="cars" id="cars" className={confirmacaoStyle.dropDown}>
+                        <select name="convidados" id="convidados" className={confirmacaoStyle.dropDown}>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -40,7 +40,7 @@ export default () => (
                     </div>
                     <div className={confirmacaoStyle.buttonForm}>
                         <button type="reset" value="Apagar" className={confirmacaoStyle.contatoBotao}>Apagar</button>
-                        <button type="submit" value="Enviar" className={confirmacaoStyle.contatoBotao}>Enviar</button>
+                        <button type="submit" value="Enviar" className={confirmacaoStyle.contatoBotao}>Confirmar</button>
                     </div>
                 </form>
             </div>

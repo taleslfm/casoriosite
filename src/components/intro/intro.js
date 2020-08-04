@@ -4,29 +4,23 @@ import introStyle from "./intro.module.scss"
 import App from '../app/app'
 
 export default () => (
-    <section id="barberPole" className={introStyle.introAll} >
-        {/* <h1 className={introStyle.tituloPrincipal}>Exemplo</h1> */}
+    <section className={introStyle.introAll} >
         <div className={introStyle.introText}>
             <p>
-                Criamos esse site para compartilhar com vocês os detalhes da organização do nosso casamento. 
-                Estamos muito felizes e contamos com a presença de todos no nosso grande dia!
+                Querido convidado, seja bem-vindo ao nosso site de casamento! Aqui, você terá acesso a todas informações da nossa festa e poderá 
+                participar de pertinho de cada passo nosso até o grande dia! Use nosso site para confirmar presença, ter acesso a localização da 
+                cerimônia, ver nossas dicas de presentes, dicas sobre o que vestir e conheça nossos padrinhos.<br/>
+                Estamos em contagem regressiva para o grande dia e não vemos a hora de vivermos, sentirmos e sonharmos juntos.
             </p>
             <p>
-                Aqui vocês encontrarão também dicas para hospedagem, salão de beleza, trajes, estacionamento, etc.
+                Fique a vontade por dar uma voltinha pelo site e nos conhecer um pouco mais :)    
             </p>
             <p>
-                Ah, é importante também confirmar sua presença. 
-                Para isto contamos com sua ajuda clicando no menu "Confirme sua Presença" e preenchendo os dados necessários.
-            </p>
-            <p>
-                Para nos presentear, escolha qualquer item da Lista de Casamento, seja um item de algum dos sites,
-                lojas físicas, ou então vocês podem utilizar a opção de cotas. Fiquem à vontade!
-            </p>
-            <p>
-                Aguardamos vocês no nosso grande dia!
+                Com amor <br/>
+                Isa e Tales
             </p>
         </div>
-        <section>
+        <section className={introStyle.contador}>
             <App></App>
         </section>
     </section>

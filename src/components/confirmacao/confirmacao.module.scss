@@ -6,20 +6,21 @@
     text-align: center;
     @include breakpoint (baby-bear) {
         margin: 3vh;
+        text-align: left;
     }
 }
 
 .tituloPrincipal {
     font-family: 'featherly', sans-serif;
     font-size: 10vh;
-    margin-bottom: 5vh;
-    @include breakpoint (baby-bear) {
-        font-size: 4vh;
-    }
+    margin-bottom: 10vh;
 }
 
 .formAll {
     padding-left: 30vw;
+    @include breakpoint (baby-bear) {
+        padding: 0;
+    }
 }
 
 .formSection {
@@ -47,8 +48,14 @@
 }
 
 .dropDown {
-    width: 5vw;
-    margin-top: .5vh;
+    position: relative;
+    font-family: Arial;
+    > select {
+        display: none;
+    }
+    &::selection {
+        background-color: maroon;
+    }
 }
 
 .buttonForm {

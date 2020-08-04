@@ -1,9 +1,144 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import padrinhosStyle from "./padrinhos.module.scss"
 
-export default () => (
+export default () => {
+        const data = useStaticQuery(graphql`
+      query PadrinQuery {
+        dhielleerika: file(relativePath: {eq: "dhielleerika.jpeg"}) {
+          childImageSharp {
+            fixed {
+              base64
+              aspectRatio
+              srcWebp
+              srcSetWebp
+              originalName
+              height
+              width
+              src
+              srcSet
+              tracedSVG
+            }
+          }
+        }
+        caitofernanda: file(relativePath: {eq: "caitofernanda.png"}) {
+          childImageSharp {
+            fixed {
+              base64
+              aspectRatio
+              srcWebp
+              srcSetWebp
+              originalName
+              height
+              width
+              src
+              srcSet
+              tracedSVG
+            }
+          }
+        }
+        bryangiovana: file(relativePath: {eq: "bryangiovana.jpeg"}) {
+            childImageSharp {
+              fixed {
+                base64
+                aspectRatio
+                srcWebp
+                srcSetWebp
+                originalName
+                height
+                width
+                src
+                srcSet
+                tracedSVG
+              }
+            }
+          }
+          airtonmarlete: file(relativePath: {eq: "airtonmarlete.jpeg"}) {
+            childImageSharp {
+              fixed {
+                base64
+                aspectRatio
+                srcWebp
+                srcSetWebp
+                originalName
+                height
+                width
+                src
+                srcSet
+                tracedSVG
+              }
+            }
+          }
+          lucasraissa: file(relativePath: {eq: "lucasraissa.jpeg"}) {
+            childImageSharp {
+              fixed {
+                base64
+                aspectRatio
+                srcWebp
+                srcSetWebp
+                originalName
+                height
+                width
+                src
+                srcSet
+                tracedSVG
+              }
+            }
+          }
+          zemarcia: file(relativePath: {eq: "zemarcia.jpeg"}) {
+            childImageSharp {
+              fixed {
+                base64
+                aspectRatio
+                srcWebp
+                srcSetWebp
+                originalName
+                height
+                width
+                src
+                srcSet
+                tracedSVG
+              }
+            }
+          }
+          pedro: file(relativePath: {eq: "pedro.jpeg"}) {
+            childImageSharp {
+              fixed {
+                base64
+                aspectRatio
+                srcWebp
+                srcSetWebp
+                originalName
+                height
+                width
+                src
+                srcSet
+                tracedSVG
+              }
+            }
+          }
+          sonia: file(relativePath: {eq: "sonia.jpeg"}) {
+            childImageSharp {
+              fixed {
+                base64
+                aspectRatio
+                srcWebp
+                srcSetWebp
+                originalName
+                height
+                width
+                src
+                srcSet
+                tracedSVG
+              }
+            }
+          }
+        }
+      `)
 
+      return (
     <section id="padrinhos">
         <div className={padrinhosStyle.container} >
             <h1 className={padrinhosStyle.tituloPrincipal}>Padrinhos</h1>
@@ -20,31 +155,40 @@ export default () => (
             </p>
             </div>
             <div className={padrinhosStyle.containerPadrinhos}>
-                <div className={padrinhosStyle.fotoDhielleErika}>
+                <div className={padrinhosStyle.containerDhielleErika}>
+                    <Img className={padrinhosStyle.fotoDhielleErika} fixed={data.dhielleerika.childImageSharp.fixed} alt="Jefferson e Érika"/>   
                     <p>Jefferson e Érika</p>
                 </div>
-                <div className={padrinhosStyle.fotoCaitoFernanda}>
+                <div className={padrinhosStyle.containerCaitoFernanda}>
+                    <Img className={padrinhosStyle.fotoCaitoFernanda} fixed={data.caitofernanda.childImageSharp.fixed} alt="Carlos e Fernanda"/>
                     <p>Carlos e Fernanda</p>
                 </div>
-                <div className={padrinhosStyle.fotoBryanGiovana}>
+                <div className={padrinhosStyle.containerBryanGiovana}>
+                    <Img className={padrinhosStyle.fotoBryanGiovana} fixed={data.bryangiovana.childImageSharp.fixed} alt="Bryan e Giovana"/>
                     <p>Bryan e Giovana</p>
                 </div>
-                <div className={padrinhosStyle.fotoAirtonMarlete}>
+                <div className={padrinhosStyle.containerAirtonMarlete}>
+                    <Img className={padrinhosStyle.fotoAirtonMarlete} fixed={data.airtonmarlete.childImageSharp.fixed} alt="Airton e Marlete"/>
                     <p>Airton e Marlete</p>
                 </div>
-                <div className={padrinhosStyle.fotoLucasRaissa}>
+                <div className={padrinhosStyle.containerLucasRaissa}>
+                    <Img className={padrinhosStyle.fotoLucasRaissa} fixed={data.lucasraissa.childImageSharp.fixed} alt="Lucas e Raissa"/>
                     <p>Lucas e Raissa</p>
                 </div>
-                <div className={padrinhosStyle.fotoZeMarcia}>
+                <div className={padrinhosStyle.containerZeMarcia}>
+                    <Img className={padrinhosStyle.fotoZeMarcia} fixed={data.zemarcia.childImageSharp.fixed} alt="José Valter e Márcia"/>
                     <p>José Valter e Márcia</p>
                 </div>
-                <div className={padrinhosStyle.fotoSonia}>
+                <div className={padrinhosStyle.containerSonia}>
+                    <Img className={padrinhosStyle.fotoSonia} fixed={data.sonia.childImageSharp.fixed} alt="Sonia"/>
                     <p>Sônia</p>
                 </div>
-                <div className={padrinhosStyle.fotoPedro}>
+                <div className={padrinhosStyle.containerPedro}>
+                    <Img className={padrinhosStyle.fotoPedro} fixed={data.pedro.childImageSharp.fixed} alt="Pedro"/>
                     <p>Pedro</p>
                 </div>
             </div>
         </div>
     </section>
 )
+    }
