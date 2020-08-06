@@ -26,18 +26,18 @@ export default () => (
                         <span>Você irá ao evento?</span>
                         <div>
                             <div>
-                                <input type="radio" id="f-option" name="selector"/>
-                                <label for="f-option">Sim</label>
+                                <input type="radio" id="Sim" name="selector"/>
+                                <label htmlFor="sim">Sim</label>
                             </div>
                             <div>
-                                <input type="radio" id="f-option" name="selector"/>
-                                <label for="f-option">Não</label>
+                                <input type="radio" id="Não" name="selector"/>
+                                <label htmlFor="nao">Não</label>
                             </div>
                         </div>
                     </div>
                     <div className={confirmacaoStyle.formSection}>
                         <div className={confirmacaoStyle.quantos}>
-                            <label for="quantidade convidados">Quantos adultos?</label>
+                            <label htmlFor="quantidade convidados">Quantos adultos?</label>
                             <select name="convidados" id="convidados" className={confirmacaoStyle.dropDown}>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -52,7 +52,7 @@ export default () => (
                         </div>
                     </div>
                     <div className={confirmacaoStyle.containerTel}>
-                        <label for="phone">Telefone:</label>
+                        <label htmlFor="phone">Telefone:</label>
                         <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" inputMode="tel" />
                     </div>
                     <div className={confirmacaoStyle.formSection}>
