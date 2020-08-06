@@ -53,8 +53,7 @@ export default () => (
                     </div>
                     <div className={confirmacaoStyle.containerTel}>
                         <label for="phone">Telefone:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" 
-                            inputMode="tel" />
+                        <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" inputMode="tel" />
                     </div>
                     <div className={confirmacaoStyle.formSection}>
                         <label htmlFor="message">Se quiser deixe uma mensagem!</label>
