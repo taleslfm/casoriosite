@@ -71,7 +71,7 @@ export default () => {
               }
             }
           }
-          lucasraissa: file(relativePath: {eq: "lucasraissa.jpeg"}) {
+          gabrielraissa: file(relativePath: {eq: "gabrielraissa.jpeg"}) {
             childImageSharp {
               fixed {
                 base64
@@ -135,6 +135,54 @@ export default () => {
               }
             }
           }
+          samirrafaela: file(relativePath: {eq: "samirrafaela.jpeg"}) {
+            childImageSharp {
+              fixed {
+                base64
+                aspectRatio
+                srcWebp
+                srcSetWebp
+                originalName
+                height
+                width
+                src
+                srcSet
+                tracedSVG
+              }
+            }
+          }
+          marlonpatricia: file(relativePath: {eq: "marlonpatricia.jpeg"}) {
+            childImageSharp {
+              fixed {
+                base64
+                aspectRatio
+                srcWebp
+                srcSetWebp
+                originalName
+                height
+                width
+                src
+                srcSet
+                tracedSVG
+              }
+            }
+          }
+          teffoivana: file(relativePath: {eq: "teffoivana.jpeg"}) {
+            childImageSharp {
+              fixed {
+                base64
+                aspectRatio
+                srcWebp
+                srcSetWebp
+                originalName
+                height
+                width
+                src
+                srcSet
+                tracedSVG
+              }
+            }
+          }
         }
       `)
 
@@ -171,13 +219,25 @@ export default () => {
                     <Img className={padrinhosStyle.fotoAirtonMarlete} fixed={data.airtonmarlete.childImageSharp.fixed} alt="Airton e Marlete"/>
                     <p>Airton e Marlete</p>
                 </div>
-                <div className={padrinhosStyle.containerLucasRaissa}>
-                    <Img className={padrinhosStyle.fotoLucasRaissa} fixed={data.lucasraissa.childImageSharp.fixed} alt="Lucas e Raissa"/>
-                    <p>Lucas e Raissa</p>
+                <div className={padrinhosStyle.containerGabrielRaissa}>
+                    <Img className={padrinhosStyle.fotoGabrielRaissa} fixed={data.gabrielraissa.childImageSharp.fixed} alt="Gabriel e Raissa"/>
+                    <p>Gabriel e Raissa</p>
                 </div>
                 <div className={padrinhosStyle.containerZeMarcia}>
                     <Img className={padrinhosStyle.fotoZeMarcia} fixed={data.zemarcia.childImageSharp.fixed} alt="José Valter e Márcia"/>
                     <p>José Valter e Márcia</p>
+                </div>
+                <div className={padrinhosStyle.containerSamirRafaela}>
+                    <Img className={padrinhosStyle.fotoSamirRafaela} fixed={data.samirrafaela.childImageSharp.fixed} alt="Pedro"/>
+                    <p>Samir e Rafaela</p>
+                </div>
+                <div className={padrinhosStyle.containerTeffoIvana}>
+                    <Img className={padrinhosStyle.fotoTeffoIvana} fixed={data.teffoivana.childImageSharp.fixed} alt="Pedro"/>
+                    <p>Steffenson e Ivana</p>
+                </div>
+                <div className={padrinhosStyle.containerMarlonPatricia}>
+                    <Img className={padrinhosStyle.fotoMarlonPatricia} fixed={data.marlonpatricia.childImageSharp.fixed} alt="Pedro"/>
+                    <p>Marlon e Patrícia</p>
                 </div>
                 <div className={padrinhosStyle.containerSonia}>
                     <Img className={padrinhosStyle.fotoSonia} fixed={data.sonia.childImageSharp.fixed} alt="Sonia"/>

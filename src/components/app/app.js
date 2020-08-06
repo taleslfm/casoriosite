@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div>
         <h3 className={styledApp.titleApp}>Nos vemos em:</h3>
-        <Countdown date={`${year}-10-20T17:30:00`} />
+        <Countdown date={`${year}-10-10T17:30:00`} />
       </div>
     );
   }

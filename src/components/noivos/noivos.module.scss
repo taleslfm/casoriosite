@@ -30,22 +30,17 @@
         display: flex;
         flex-wrap: wrap;
         flex-flow: column;
-        margin-left: 8vw;
+        margin-left: 3vw;
     }
 }
 
 .noiva {
-    width: 20em;
-    height: 20em;
-    min-width: 20em;
+    width: 50vh;
+    height: 50vh;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
     border: 1px maroon solid;
-    @include breakpoint (baby-bear) {
-        width: 10vh;
-        height: 50vh;
-    }
 }
 
 .noivo {
@@ -55,14 +50,19 @@
 .noivaFoto {
     transform: scale(2);
     position: relative;
-    left: 120px;
-    top: 90px;
-
+    left: 10vw;
+    top: 9vh;
+    @include breakpoint (baby-bear) {
+        left: 35vw;
+    }
 }
 
 .noivoFoto {
     transform: scale(1.8);
     position: relative;
-    left: -200px;
-    top: 90px;
+    left: -13vw;
+    top: 11vh;
+    @include breakpoint (baby-bear) {
+        left: -47vw;
+    }
 }

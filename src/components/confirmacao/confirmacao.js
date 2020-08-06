@@ -16,11 +16,11 @@ export default () => (
                     <input type="hidden" name="contact" value="contact"/>
                     <div className={confirmacaoStyle.formSection} >
                         <label htmlFor="name"></label>
-                        <input type="text" placeholder="Nome do Convidado:" name="Nome" id="name"/>
+                        <input type="text" placeholder="Nome do Convidado" name="Nome" id="name" inputMode= "text"/>
                     </div>
                     <div className={confirmacaoStyle.formSection}>
                         <label htmlFor="email"></label>
-                        <input type="email" name="E-mail" placeholder="Email:" id="email"/>
+                        <input type="email" name="E-mail" placeholder="Email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" inputMode="email"/>
                     </div>
                     <div className={confirmacaoStyle.containerRadio}>
                         <span>Você irá ao evento?</span>
@@ -53,7 +53,8 @@ export default () => (
                     </div>
                     <div className={confirmacaoStyle.containerTel}>
                         <label for="phone">Telefone:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/>
+                        <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" 
+                            inputMode="tel" />
                     </div>
                     <div className={confirmacaoStyle.formSection}>
                         <label htmlFor="message">Se quiser deixe uma mensagem!</label>
@@ -68,3 +69,4 @@ export default () => (
         </div>
     </section>
 )
+

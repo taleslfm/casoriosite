@@ -22,49 +22,48 @@
 .containerPadrinhos {
     width: 90%;
     margin: 5vw;
-    display: grid;
-    grid-template-columns: 5vw 30vw 30vw 30vw 5vw;
-    grid-template-rows: 40vh 40vh 40vh;
-    column-gap: 10px;
-    row-gap: 15px;
-    justify-content: center;
+    // display: grid;
+    // grid-template-columns: 5vw 30vw 30vw 30vw 5vw;
+    // grid-template-rows: 40vh 40vh 40vh;
+    // column-gap: 10px;
+    // row-gap: 15px;
+    // justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     @include breakpoint (baby-bear) {
         display: flex;
         flex-wrap: wrap;
         flex-flow: column;
-        margin-left: 20vw;
+        margin-left: 15vw;
     }
 }
 
 .singlePadrinhos {
-    height: 30vh;
-    width: 30vh;
+    position: relative;
+    height: 35vh;
+    width: 35vh;
     border-radius: 50%;
     overflow: hidden;
+    margin-left: 5vh;
+    margin-bottom: 5vh;
     > p {
-        position: relative;
+        position: absolute;
         color: white;
         text-align: center;
         font-size: 2em;
         opacity: 0;
         -webkit-text-stroke: 1px #fff;
+        top: 45%;
+        left: 1rem;
     }
-    &:hover {
+    &:hover, &focus {
         p {
             opacity: 1;
         }
     }
     @include breakpoint (baby-bear) {
+        margin-left: 0;
         margin-bottom: 3vh;
-    }
-}
-
-.containerDhielleErika {
-    @extend .singlePadrinhos;
-    grid-column: 2;
-    justify-self: end;
-    > p {
-        top: -180px;
     }
 }
 
@@ -73,69 +72,54 @@
         opacity: .5;
     }
 }
+
+.containerDhielleErika {
+    @extend .singlePadrinhos;
+}
+
+
 .fotoDhielleErika {
     @extend .blurFoto;
-    left: -130px;
+    left: -50%;
 }
 
 .containerCaitoFernanda {
     @extend .singlePadrinhos;
-    grid-column: 3;
     justify-self: center;
-    > p {
-        top: -220px;
-    }
 }
 
 .fotoCaitoFernanda {
     @extend .blurFoto;
-    transform: scale(1.2);
-    left: -20px;
+    transform: scale(1.7);
+    left: 9%;
 }
 
 .containerBryanGiovana {
     @extend .singlePadrinhos;
-    grid-column: 4;
-    > p {
-        top: -325px;
-    }
 }
 
 .fotoBryanGiovana {
     @extend .blurFoto;
-    transform: scale(.7);
-    left: -75px;
-    top: -60px;
+    left: -25%;
 }
 
 .containerAirtonMarlete {
     @extend .singlePadrinhos;
-    grid-column: 2;
-    grid-row: 2;
     justify-self: right;
-    > p {
-        top: -525px;
-    }
 }
 
 .fotoAirtonMarlete {
     @extend .blurFoto;
-    left: -110px;
+    left: -80px;
     top: -90px;
     transform: scale(.7);
 }
 
-.containerLucasRaissa {
+.containerGabrielRaissa {
     @extend .singlePadrinhos;
-    grid-column: 3;
-    grid-row: 2;
-    justify-self: center;
-    > p {
-        top: -340px;
-    }
 }
 
-.fotoLucasRaissa {
+.fotoGabrielRaissa {
     @extend .blurFoto;
     left: -80px;
     top: -20px;
@@ -143,41 +127,71 @@
 
 .containerZeMarcia {
     @extend .singlePadrinhos;
-    grid-column: 4;
-    grid-row: 2;
-    > p {
-        top: -135px;
+    p {
+        left: 1%;
     }
 }
 
 .fotoZeMarcia {
     @extend .blurFoto;
+    transform: scale(1.2);
     left: -75px;
+    top: 20px;
+}
+
+.containerSamirRafaela {
+    @extend .singlePadrinhos;
+    justify-self: end;
+}
+
+.fotoSamirRafaela {
+    @extend .blurFoto;
+    left: -50px;
+    top: -50px;
+}
+
+.containerTeffoIvana {
+    @extend .singlePadrinhos;
+    justify-self: end;
+}
+
+.fotoTeffoIvana {
+    @extend .blurFoto;
+    transform: scale(1.5);
+    left: -50px;
+}
+
+.containerMarlonPatricia {
+    @extend .singlePadrinhos;
+    margin-left: 13vw;
+    @include breakpoint (baby-bear) {
+        margin-left: 0;
+    }
+}
+
+.fotoMarlonPatricia {
+    @extend .blurFoto;
+    left: -10px;
+    top: -7px;
 }
 
 .containerPedro {
     @extend .singlePadrinhos;
-    grid-column: 3;
-    grid-row: 3;
-    justify-self: start;
-    > p {
-        top: -400px;
+    p {
+        left: 5rem;
     }
 }
 .fotoPedro {
     @extend .blurFoto;
-    transform: scale(.6);
-    left: -100px;
+    transform: scale(.7);
+    left: -70px;
     top: -100px;
 }
 
 .containerSonia {
     @extend .singlePadrinhos;
-    grid-column: 3;
-    grid-row: 3;
-    justify-self: end;
-    > p {
-        top: -320px;
+    p {
+        left: 5rem;
     }
 }
 .fotoSonia {

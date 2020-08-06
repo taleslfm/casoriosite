@@ -14,3 +14,11 @@
         font-size: 10vh;
     }
 }
+
+.textoPresente {
+    margin: 0 20vw 0 20vw;
+    text-align: left;
+    @include breakpoint (baby-bear) {
+        margin: 3vh 5vh;
+    }
+}
