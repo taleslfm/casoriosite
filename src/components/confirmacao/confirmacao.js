@@ -26,11 +26,11 @@ export default () => (
                         <span>Você irá ao evento?</span>
                         <div>
                             <div>
-                                <input type="radio" id="Sim" name="Sim" value="Sim"/>
+                                <input type="radio" id="Sim" name="Vem?" value="Sim"/>
                                 <label htmlFor="sim">Sim</label>
                             </div>
                             <div>
-                                <input type="radio" id="Não" name="Nao" value="Não"/>
+                                <input type="radio" id="Não" name="Vem?" value="Não"/>
                                 <label htmlFor="nao">Não</label>
                             </div>
                         </div>
