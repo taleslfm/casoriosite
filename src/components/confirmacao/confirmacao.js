@@ -13,7 +13,7 @@ export default () => (
         <div className={confirmacaoStyle.formAll}>
             <div className={confirmacaoStyle.formSection}>
                 <form name="confirmação" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                    <input type="hidden" name="contact" value="contact"/>
+                    <input type="hidden" name="confirmação" value="confirmacao"/>
                     <div className={confirmacaoStyle.formSection} >
                         <label htmlFor="name"></label>
                         <input type="text" placeholder="Nome do Convidado" name="Nome" id="name" inputMode= "text"/>
@@ -26,11 +26,11 @@ export default () => (
                         <span>Você irá ao evento?</span>
                         <div>
                             <div>
-                                <input type="radio" id="Sim" name="selector"/>
+                                <input type="radio" id="Sim" name="Sim"/>
                                 <label htmlFor="sim">Sim</label>
                             </div>
                             <div>
-                                <input type="radio" id="Não" name="selector"/>
+                                <input type="radio" id="Não" name="Nao"/>
                                 <label htmlFor="nao">Não</label>
                             </div>
                         </div>

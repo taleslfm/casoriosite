@@ -5,38 +5,36 @@
     display: flex;
     flex-flow: column;
     text-align: center;
-    margin: 7vh 20vw;
-    margin-bottom: 20vh;
+    justify-content: center;
+    padding: 10vw;
     > p {
         text-align: left;
-    }
-    @include breakpoint (baby-bear) {
-        margin: 3vh;
     }
 }
 
 .tituloPrincipal {
     font-family: 'featherly', sans-serif;
     font-size: 10vh;
+    margin-bottom: 5vh;
 }
 
 .containerNoivos {
     display: flex;
-    justify-content: space-evenly;
     margin-bottom: 10vh;
-    margin-left: 5vw;
-    width: 85vw;
+    padding-left: 18vw;
     @include breakpoint (baby-bear) {
         display: flex;
         flex-wrap: wrap;
         flex-flow: column;
-        margin-left: 3vw;
+        padding-left: 10vw;
     }
 }
 
 .noiva {
-    width: 50vh;
-    height: 50vh;
+    width: 60vh;
+    height: 60vh;
+    max-height: 80vw;
+    max-width: 80vw;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -48,21 +46,23 @@
 }
 
 .noivaFoto {
-    transform: scale(2);
+    transform: scale(2.3);
     position: relative;
-    left: 10vw;
+    left: 12vw;
     top: 9vh;
     @include breakpoint (baby-bear) {
+        transform: scale(2);
         left: 35vw;
     }
 }
 
 .noivoFoto {
-    transform: scale(1.8);
+    transform: scale(2.2);
     position: relative;
     left: -13vw;
     top: 11vh;
     @include breakpoint (baby-bear) {
+        transform: scale(1.7);
         left: -47vw;
     }
 }

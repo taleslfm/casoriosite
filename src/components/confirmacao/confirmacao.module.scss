@@ -14,6 +14,10 @@
     font-family: 'featherly', sans-serif;
     font-size: 10vh;
     margin-bottom: 5vh;
+    text-align: center;
+    @include breakpoint (mama-bear) {
+        font-size: 9vh;
+    }
 }
 
 .sub {
@@ -37,10 +41,6 @@
         &:focus {
             border: 2px solid maroon;
         }
-    }
-    label {
-        // font-size: 3vh;
-        // padding-right: 1vw;
     }
     @include breakpoint (baby-bear) {
         flex-flow: column;

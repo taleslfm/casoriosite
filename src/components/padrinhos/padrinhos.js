@@ -205,47 +205,47 @@ export default () => {
             <div className={padrinhosStyle.containerPadrinhos}>
                 <div className={padrinhosStyle.containerDhielleErika}>
                     <Img className={padrinhosStyle.fotoDhielleErika} fixed={data.dhielleerika.childImageSharp.fixed} alt="Jefferson e Érika"/>   
-                    <p>Jefferson e Érika</p>
+                    <span>Jefferson e Érika</span>
                 </div>
                 <div className={padrinhosStyle.containerCaitoFernanda}>
                     <Img className={padrinhosStyle.fotoCaitoFernanda} fixed={data.caitofernanda.childImageSharp.fixed} alt="Carlos e Fernanda"/>
-                    <p>Carlos e Fernanda</p>
+                    <span>Carlos e Fernanda</span>
                 </div>
                 <div className={padrinhosStyle.containerBryanGiovana}>
                     <Img className={padrinhosStyle.fotoBryanGiovana} fixed={data.bryangiovana.childImageSharp.fixed} alt="Bryan e Giovana"/>
-                    <p>Bryan e Giovana</p>
+                    <span>Bryan e Giovana</span>
                 </div>
                 <div className={padrinhosStyle.containerAirtonMarlete}>
                     <Img className={padrinhosStyle.fotoAirtonMarlete} fixed={data.airtonmarlete.childImageSharp.fixed} alt="Airton e Marlete"/>
-                    <p>Airton e Marlete</p>
+                    <span>Airton e Marlete</span>
                 </div>
                 <div className={padrinhosStyle.containerGabrielRaissa}>
                     <Img className={padrinhosStyle.fotoGabrielRaissa} fixed={data.gabrielraissa.childImageSharp.fixed} alt="Gabriel e Raissa"/>
-                    <p>Gabriel e Raissa</p>
+                    <span>Gabriel e Raissa</span>
                 </div>
                 <div className={padrinhosStyle.containerZeMarcia}>
                     <Img className={padrinhosStyle.fotoZeMarcia} fixed={data.zemarcia.childImageSharp.fixed} alt="José Valter e Márcia"/>
-                    <p>José Valter e Márcia</p>
+                    <span>José Valter e Márcia</span>
                 </div>
                 <div className={padrinhosStyle.containerSamirRafaela}>
                     <Img className={padrinhosStyle.fotoSamirRafaela} fixed={data.samirrafaela.childImageSharp.fixed} alt="Pedro"/>
-                    <p>Samir e Rafaela</p>
+                    <span>Samir e Rafaela</span>
                 </div>
                 <div className={padrinhosStyle.containerTeffoIvana}>
                     <Img className={padrinhosStyle.fotoTeffoIvana} fixed={data.teffoivana.childImageSharp.fixed} alt="Pedro"/>
-                    <p>Steffenson e Ivana</p>
+                    <span>Steffenson e Ivana</span>
                 </div>
                 <div className={padrinhosStyle.containerMarlonPatricia}>
                     <Img className={padrinhosStyle.fotoMarlonPatricia} fixed={data.marlonpatricia.childImageSharp.fixed} alt="Pedro"/>
-                    <p>Marlon e Patrícia</p>
+                    <span>Marlon e Patrícia</span>
                 </div>
                 <div className={padrinhosStyle.containerSonia}>
                     <Img className={padrinhosStyle.fotoSonia} fixed={data.sonia.childImageSharp.fixed} alt="Sonia"/>
-                    <p>Sônia</p>
+                    <span>Sônia</span>
                 </div>
                 <div className={padrinhosStyle.containerPedro}>
                     <Img className={padrinhosStyle.fotoPedro} fixed={data.pedro.childImageSharp.fixed} alt="Pedro"/>
-                    <p>Pedro</p>
+                    <span>Pedro</span>
                 </div>
             </div>
         </div>
