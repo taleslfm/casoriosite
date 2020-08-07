@@ -39,15 +39,15 @@ export default () => (
                         <div className={confirmacaoStyle.quantos}>
                             <label htmlFor="quantidade convidados">Quantos adultos?</label>
                             <select name="convidados" id="convidados" className={confirmacaoStyle.dropDown}>
-                                <option name="1" value="1">1</option>
-                                <option name="2" value="2">2</option>
-                                <option name="3" value="3">3</option>
-                                <option name="4" value="4">4</option>
-                                <option name="5" value="5">5</option>
-                                <option name="6" value="6">6</option>
-                                <option name="7" value="7">7</option>
-                                <option name="8" value="8">8</option>
-                                <option name="9" value="9">9</option>
+                                <option  value="1">1</option>
+                                <option  value="2">2</option>
+                                <option  value="3">3</option>
+                                <option  value="4">4</option>
+                                <option  value="5">5</option>
+                                <option  value="6">6</option>
+                                <option  value="7">7</option>
+                                <option  value="8">8</option>
+                                <option value="9">9</option>
                             </select> 
                         </div>
                     </div>
