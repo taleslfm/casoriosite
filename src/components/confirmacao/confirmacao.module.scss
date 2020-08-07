@@ -55,7 +55,8 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
+    line-height: 2vh;
     span{
         justify-self: start;
     }
@@ -152,7 +153,7 @@
 .containerTel {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     input {
         width: auto;
     }

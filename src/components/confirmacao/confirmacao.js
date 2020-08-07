@@ -12,7 +12,7 @@ export default () => (
         </div>
         <div className={confirmacaoStyle.formAll}>
             <div className={confirmacaoStyle.formSection}>
-                <form name="confirmação" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <form name="confirmacao" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                     <input type="hidden" name="confirmação" value="confirmacao"/>
                     <div className={confirmacaoStyle.formSection} >
                         <label htmlFor="name"></label>
@@ -26,11 +26,11 @@ export default () => (
                         <span>Você irá ao evento?</span>
                         <div>
                             <div>
-                                <input type="radio" id="Sim" name="Sim"/>
+                                <input type="radio" id="Sim" name="Sim" value="Sim"/>
                                 <label htmlFor="sim">Sim</label>
                             </div>
                             <div>
-                                <input type="radio" id="Não" name="Nao"/>
+                                <input type="radio" id="Não" name="Nao" value="Não"/>
                                 <label htmlFor="nao">Não</label>
                             </div>
                         </div>
@@ -39,15 +39,15 @@ export default () => (
                         <div className={confirmacaoStyle.quantos}>
                             <label htmlFor="quantidade convidados">Quantos adultos?</label>
                             <select name="convidados" id="convidados" className={confirmacaoStyle.dropDown}>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
+                                <option name="1" value="1">1</option>
+                                <option name="2" value="2">2</option>
+                                <option name="3" value="3">3</option>
+                                <option name="4" value="4">4</option>
+                                <option name="5" value="5">5</option>
+                                <option name="6" value="6">6</option>
+                                <option name="7" value="7">7</option>
+                                <option name="8" value="8">8</option>
+                                <option name="9" value="9">9</option>
                             </select> 
                         </div>
                     </div>
