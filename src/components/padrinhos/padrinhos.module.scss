@@ -54,6 +54,9 @@
         span {
             opacity: 1;
         }
+        .blurFoto {
+            opacity: .5;
+        }
     }
     @include breakpoint (baby-bear) {
         margin-left: 0;
