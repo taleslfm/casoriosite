@@ -9,181 +9,170 @@ export default () => {
       query PadrinQuery {
         dhielleerika: file(relativePath: {eq: "dhielleerika.jpeg"}) {
           childImageSharp {
-            fixed {
+            fluid {
               base64
-              aspectRatio
+              tracedSVG
               srcWebp
               srcSetWebp
+              originalImg
               originalName
-              height
-              width
+              sizes
               src
               srcSet
-              tracedSVG
             }
           }
         }
-        caitofernanda: file(relativePath: {eq: "caitofernanda.png"}) {
+        caitofernanda: file(relativePath: {eq: "caitofernanda.jpeg"}) {
           childImageSharp {
-            fixed {
+            fluid {
               base64
-              aspectRatio
+              tracedSVG
               srcWebp
               srcSetWebp
+              originalImg
               originalName
-              height
-              width
+              sizes
               src
               srcSet
-              tracedSVG
             }
           }
         }
         bryangiovana: file(relativePath: {eq: "bryangiovana.jpeg"}) {
-            childImageSharp {
-              fixed {
-                base64
-                aspectRatio
-                srcWebp
-                srcSetWebp
-                originalName
-                height
-                width
-                src
-                srcSet
-                tracedSVG
-              }
+          childImageSharp {
+            fluid {
+              base64
+              tracedSVG
+              srcWebp
+              srcSetWebp
+              originalImg
+              originalName
+              sizes
+              src
+              srcSet
             }
+          }
           }
           airtonmarlete: file(relativePath: {eq: "airtonmarlete.jpeg"}) {
             childImageSharp {
-              fixed {
+              fluid {
                 base64
-                aspectRatio
+                tracedSVG
                 srcWebp
                 srcSetWebp
+                originalImg
                 originalName
-                height
-                width
+                sizes
                 src
                 srcSet
-                tracedSVG
               }
             }
           }
           gabrielraissa: file(relativePath: {eq: "gabrielraissa.jpeg"}) {
             childImageSharp {
-              fixed {
+              fluid {
                 base64
-                aspectRatio
+                tracedSVG
                 srcWebp
                 srcSetWebp
+                originalImg
                 originalName
-                height
-                width
+                sizes
                 src
                 srcSet
-                tracedSVG
               }
             }
           }
           zemarcia: file(relativePath: {eq: "zemarcia.jpeg"}) {
             childImageSharp {
-              fixed {
+              fluid {
                 base64
-                aspectRatio
+                tracedSVG
                 srcWebp
                 srcSetWebp
+                originalImg
                 originalName
-                height
-                width
+                sizes
                 src
                 srcSet
-                tracedSVG
               }
             }
           }
           pedro: file(relativePath: {eq: "pedro.jpeg"}) {
             childImageSharp {
-              fixed {
+              fluid {
                 base64
-                aspectRatio
+                tracedSVG
                 srcWebp
                 srcSetWebp
+                originalImg
                 originalName
-                height
-                width
+                sizes
                 src
                 srcSet
-                tracedSVG
               }
             }
           }
           sonia: file(relativePath: {eq: "sonia.jpeg"}) {
             childImageSharp {
-              fixed {
+              fluid {
                 base64
-                aspectRatio
+                tracedSVG
                 srcWebp
                 srcSetWebp
+                originalImg
                 originalName
-                height
-                width
+                sizes
                 src
                 srcSet
-                tracedSVG
               }
             }
           }
           samirrafaela: file(relativePath: {eq: "samirrafaela.jpeg"}) {
             childImageSharp {
-              fixed {
+              fluid {
                 base64
-                aspectRatio
+                tracedSVG
                 srcWebp
                 srcSetWebp
+                originalImg
                 originalName
-                height
-                width
+                sizes
                 src
                 srcSet
-                tracedSVG
               }
             }
           }
           marlonpatricia: file(relativePath: {eq: "marlonpatricia.jpeg"}) {
             childImageSharp {
-              fixed {
+              fluid {
                 base64
-                aspectRatio
+                tracedSVG
                 srcWebp
                 srcSetWebp
+                originalImg
                 originalName
-                height
-                width
+                sizes
                 src
                 srcSet
-                tracedSVG
               }
             }
           }
           teffoivana: file(relativePath: {eq: "teffoivana.jpeg"}) {
             childImageSharp {
-              fixed {
+              fluid {
                 base64
-                aspectRatio
+                tracedSVG
                 srcWebp
                 srcSetWebp
+                originalImg
                 originalName
-                height
-                width
+                sizes
                 src
                 srcSet
-                tracedSVG
               }
             }
           }
-        }
+      }
       `)
 
       return (
@@ -204,47 +193,47 @@ export default () => {
             </div>
             <div className={padrinhosStyle.containerPadrinhos}>
                 <div className={padrinhosStyle.containerDhielleErika}>
-                    <Img className={padrinhosStyle.fotoDhielleErika} fixed={data.dhielleerika.childImageSharp.fixed} alt="Jefferson e Érika"/>   
+                    <Img className={padrinhosStyle.fotoDhielleErika} fluid={data.dhielleerika.childImageSharp.fluid} alt="Jefferson e Érika"/>   
                     <span>Jefferson e Érika</span>
                 </div>
                 <div className={padrinhosStyle.containerCaitoFernanda}>
-                    <Img className={padrinhosStyle.fotoCaitoFernanda} fixed={data.caitofernanda.childImageSharp.fixed} alt="Carlos e Fernanda"/>
+                    <Img className={padrinhosStyle.fotoCaitoFernanda} fluid={data.caitofernanda.childImageSharp.fluid} alt="Carlos e Fernanda"/>
                     <span>Carlos e Fernanda</span>
                 </div>
                 <div className={padrinhosStyle.containerBryanGiovana}>
-                    <Img className={padrinhosStyle.fotoBryanGiovana} fixed={data.bryangiovana.childImageSharp.fixed} alt="Bryan e Giovana"/>
+                    <Img className={padrinhosStyle.fotoBryanGiovana} fluid={data.bryangiovana.childImageSharp.fluid} alt="Bryan e Giovana"/>
                     <span>Bryan e Giovana</span>
                 </div>
                 <div className={padrinhosStyle.containerAirtonMarlete}>
-                    <Img className={padrinhosStyle.fotoAirtonMarlete} fixed={data.airtonmarlete.childImageSharp.fixed} alt="Airton e Marlete"/>
+                    <Img className={padrinhosStyle.fotoAirtonMarlete} fluid={data.airtonmarlete.childImageSharp.fluid} alt="Airton e Marlete"/>
                     <span>Airton e Marlete</span>
                 </div>
                 <div className={padrinhosStyle.containerGabrielRaissa}>
-                    <Img className={padrinhosStyle.fotoGabrielRaissa} fixed={data.gabrielraissa.childImageSharp.fixed} alt="Gabriel e Raissa"/>
+                    <Img className={padrinhosStyle.fotoGabrielRaissa} fluid={data.gabrielraissa.childImageSharp.fluid} alt="Gabriel e Raissa"/>
                     <span>Gabriel e Raissa</span>
                 </div>
                 <div className={padrinhosStyle.containerZeMarcia}>
-                    <Img className={padrinhosStyle.fotoZeMarcia} fixed={data.zemarcia.childImageSharp.fixed} alt="José Valter e Márcia"/>
+                    <Img className={padrinhosStyle.fotoZeMarcia} fluid={data.zemarcia.childImageSharp.fluid} alt="José Valter e Márcia"/>
                     <span>José Valter e Márcia</span>
                 </div>
                 <div className={padrinhosStyle.containerSamirRafaela}>
-                    <Img className={padrinhosStyle.fotoSamirRafaela} fixed={data.samirrafaela.childImageSharp.fixed} alt="Pedro"/>
+                    <Img className={padrinhosStyle.fotoSamirRafaela} fluid={data.samirrafaela.childImageSharp.fluid} alt="Pedro"/>
                     <span>Samir e Rafaela</span>
                 </div>
                 <div className={padrinhosStyle.containerTeffoIvana}>
-                    <Img className={padrinhosStyle.fotoTeffoIvana} fixed={data.teffoivana.childImageSharp.fixed} alt="Pedro"/>
+                    <Img className={padrinhosStyle.fotoTeffoIvana} fluid={data.teffoivana.childImageSharp.fluid} alt="Pedro"/>
                     <span>Steffenson e Ivana</span>
                 </div>
                 <div className={padrinhosStyle.containerMarlonPatricia}>
-                    <Img className={padrinhosStyle.fotoMarlonPatricia} fixed={data.marlonpatricia.childImageSharp.fixed} alt="Pedro"/>
+                    <Img className={padrinhosStyle.fotoMarlonPatricia} fluid={data.marlonpatricia.childImageSharp.fluid} alt="Pedro"/>
                     <span>Marlon e Patrícia</span>
                 </div>
                 <div className={padrinhosStyle.containerSonia}>
-                    <Img className={padrinhosStyle.fotoSonia} fixed={data.sonia.childImageSharp.fixed} alt="Sonia"/>
+                    <Img className={padrinhosStyle.fotoSonia} fluid={data.sonia.childImageSharp.fluid} alt="Sonia"/>
                     <span>Sônia</span>
                 </div>
                 <div className={padrinhosStyle.containerPedro}>
-                    <Img className={padrinhosStyle.fotoPedro} fixed={data.pedro.childImageSharp.fixed} alt="Pedro"/>
+                    <Img className={padrinhosStyle.fotoPedro} fluid={data.pedro.childImageSharp.fluid} alt="Pedro"/>
                     <span>Pedro</span>
                 </div>
             </div>

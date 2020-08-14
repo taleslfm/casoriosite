@@ -7,35 +7,33 @@ import noivosStyle from "./noivos.module.scss"
 export default () => {
   const data = useStaticQuery(graphql`
 query NoivosQuery {
-  noivo: file(relativePath: {eq: "noivos2.png"}) {
+  noivo: file(relativePath: {eq: "noiva.png"}) {
     childImageSharp {
-      fixed {
+      fluid {
         base64
-        aspectRatio
+        tracedSVG
         srcWebp
         srcSetWebp
+        originalImg
         originalName
-        height
-        width
-        src
+        sizes
         srcSet
-        tracedSVG
+        src
       }
     }
   }
-  noiva: file(relativePath: {eq: "noivos2.png"}) {
+  noiva: file(relativePath: {eq: "noivo.png"}) {
     childImageSharp {
-      fixed {
+      fluid {
         base64
-        aspectRatio
+        tracedSVG
         srcWebp
         srcSetWebp
+        originalImg
         originalName
-        height
-        width
-        src
+        sizes
         srcSet
-        tracedSVG
+        src
       }
     }
   }
@@ -67,10 +65,10 @@ query NoivosQuery {
       </section>
       <section className={noivosStyle.containerNoivos}>
         <div className={noivosStyle.noivo}>
-          <Img className={noivosStyle.noivaFoto} fixed={data.noivo.childImageSharp.fixed} alt="noivo"/>
+          <Img className={noivosStyle.noivaFoto} fluid={data.noivo.childImageSharp.fluid} alt="noivo"/>
         </div>
         <div className={noivosStyle.noiva}>
-          <Img className={noivosStyle.noivoFoto} fixed={data.noiva.childImageSharp.fixed} alt="noiva"/>
+          <Img className={noivosStyle.noivoFoto} fluid={data.noiva.childImageSharp.fluid} alt="noiva"/>
         </div>
       </section>
     </div>

@@ -5,8 +5,9 @@
     flex-flow: column;
     text-align: center;
     min-height: 100vh;
+    padding: 10vw;
     @include breakpoint (baby-bear) {
-        // width: 95%;
+        
     }
 }
 .tituloPrincipal {
@@ -19,9 +20,7 @@
 }
 
 .introText {
-    margin: 15vh 15vw 0 15vw;
     p{
-        margin: 0 5vw;
         text-align: left;
     }
     @include breakpoint (baby-bear) {

@@ -3,6 +3,7 @@
 .headerLogo {
     height: 120vh;
     width: 99vw;
+    overflow-x: hidden;
     background: url("../../images/IMG_6455.png");
     background-size: 100vw 150vh;
     background-repeat: no-repeat;
@@ -10,9 +11,10 @@
     background-position: 0 -30vh;
     @include breakpoint (baby-bear) {
         height: none;
-        background-size: 100vw 45vh;
+        background-size: 97vw 45vh;
         background-position: 0vw 10vh;
         height: 60vh;
+        overflow: hidden;
     }
 }
 
@@ -34,14 +36,15 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 99vw;
     position: fixed;
     z-index: 2;
     @include breakpoint (baby-bear) {
         flex-wrap: wrap;
         min-height: 20vh;
+        width: 98vw;
         > nav {
-            width: 95%;
+            width: 98vw;
             margin-bottom: 2vh;
             margin-left: 4.2vw;
         }

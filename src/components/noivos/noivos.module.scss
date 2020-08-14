@@ -19,50 +19,48 @@
 }
 
 .containerNoivos {
+    width: 90%;
     display: flex;
-    margin-bottom: 10vh;
-    padding-left: 18vw;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+    margin-left: 3vw;
+    justify-content: center;
     @include breakpoint (baby-bear) {
-        display: flex;
-        flex-wrap: wrap;
         flex-flow: column;
-        padding-left: 10vw;
+        margin-left: 5vw;
+    }
+}
+
+.noivo {
+    align-self: center;
+    border: 1px maroon solid;
+    position: relative;
+    height: 60vh;
+    width: 60vh;
+    min-width: 50vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 5vh;
+    margin-bottom: 5vh;
+    @include breakpoint (baby-bear) {
+        height: 42vh;
+        width: 42vh;
+        min-width: 40vh;
+        margin-left: 0;
     }
 }
 
 .noiva {
-    width: 60vh;
-    height: 60vh;
-    max-height: 80vw;
-    max-width: 80vw;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 1px maroon solid;
-}
-
-.noivo {
-    @extend .noiva;
+    @extend .noivo;
 }
 
 .noivaFoto {
-    transform: scale(2.3);
-    position: relative;
-    left: 12vw;
-    top: 9vh;
+    height: 35vw;
     @include breakpoint (baby-bear) {
-        transform: scale(2);
-        left: 35vw;
+        height: 55vh;
     }
 }
 
 .noivoFoto {
-    transform: scale(2.2);
-    position: relative;
-    left: -13vw;
-    top: 11vh;
-    @include breakpoint (baby-bear) {
-        transform: scale(1.7);
-        left: -47vw;
-    }
+    @extend .noivaFoto;
 }

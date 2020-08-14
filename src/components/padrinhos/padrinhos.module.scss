@@ -1,7 +1,7 @@
 @import '../../styles/queries.scss';
 
 .container {
-    padding-top: 15vh;
+    padding-top: 8vh;
     margin-bottom: 20vh;
 }
 
@@ -21,7 +21,7 @@
 
 .containerPadrinhos {
     width: 90%;
-    margin: 5vw;
+    margin: 10vw;
     display: flex;
     flex-wrap: wrap;
     @include breakpoint (baby-bear) {
@@ -36,6 +36,7 @@
     position: relative;
     height: 35vh;
     width: 35vh;
+    min-width: 35vh;
     border-radius: 50%;
     overflow: hidden;
     margin-left: 5vh;
@@ -65,6 +66,7 @@
 }
 
 .blurFoto {
+    height: 35vh;
     &:hover, &:focus {
         opacity: .5;
     }
@@ -77,27 +79,17 @@
 
 .fotoDhielleErika {
     @extend .blurFoto;
-    left: -50%;
-    @include breakpoint (mama-bear) {
-        transform: scale(1.2);
-        left: -7rem;
-        top: .5rem;
-    }
+    left: -8vh;
+    transform: scale(1.5);
 }
 
 .containerCaitoFernanda {
     @extend .singlePadrinhos;
-    justify-self: center;
 }
 
 .fotoCaitoFernanda {
     @extend .blurFoto;
-    transform: scale(1.8);
-    @include breakpoint (baby-bear) {
-        transform: scale(1.5);
-        top: 10vw;
-        left: 0vw;
-    }
+    
 }
 
 .containerBryanGiovana {
@@ -106,7 +98,6 @@
 
 .fotoBryanGiovana {
     @extend .blurFoto;
-    left: -25%;
 }
 
 .containerAirtonMarlete {
@@ -115,15 +106,6 @@
 
 .fotoAirtonMarlete {
     @extend .blurFoto;
-    left: -6vw;
-    top: -8vw;
-    transform: scale(.7);
-    @include breakpoint (baby-bear) {
-        transform: scale(.9);
-        left: -30vw;
-        top: -10vh;
-    }
-    
 }
 
 .containerGabrielRaissa {
@@ -132,11 +114,6 @@
 
 .fotoGabrielRaissa {
     @extend .blurFoto;
-    left: -80px;
-    top: -20px;
-    @include breakpoint (mama-bear) {
-        left: -3.5rem;
-    }
  }
 
 .containerZeMarcia {
@@ -148,28 +125,16 @@
 
 .fotoZeMarcia {
     @extend .blurFoto;
-    transform: scale(1.2);
-    left: -75px;
-    top: 20px;
-    @include breakpoint (mama-bear) {
-        transform: scale(1.4);
-        top: 1rem;
-        left: -2.5rem;
-    }
 }
 
 .containerSamirRafaela {
     @extend .singlePadrinhos;
-    justify-self: end;
 }
 
 .fotoSamirRafaela {
     @extend .blurFoto;
-    left: -50px;
-    top: -50px;
-    @include breakpoint (mama-bear) {
-        top: -1rem;
-    }
+    transform: scale(1.2);
+    left: 3vh;
 }
 
 .containerTeffoIvana {
@@ -179,8 +144,6 @@
 
 .fotoTeffoIvana {
     @extend .blurFoto;
-    transform: scale(1.5);
-    left: -50px;
 }
 
 .containerMarlonPatricia {
@@ -193,12 +156,8 @@
 
 .fotoMarlonPatricia {
     @extend .blurFoto;
-    left: -10px;
-    top: -10px;
-    @include breakpoint (mama-bear) {
-        transform: scale(1.1);
-        top: .5rem;
-    }
+    transform: scale(1.8);
+    top: 12vh;
 }
 
 .containerPedro {
@@ -209,13 +168,6 @@
 }
 .fotoPedro {
     @extend .blurFoto;
-    transform: scale(.7);
-    left: -70px;
-    top: -100px;
-    @include breakpoint (mama-bear) {
-        transform: scale(.8);
-        left: -3.9rem;
-    }
 }
 
 .containerSonia {
@@ -226,6 +178,5 @@
 }
 .fotoSonia {
     @extend .blurFoto;
-    top: -120px;
-    left: -90px;
+    transform: scale(1.5);
 }
